@@ -24,7 +24,7 @@ It first opens a dialog box with the following options:
     + full: correct the full horizontal band from the left to the right image border
 - soft edges: use soft edges at the top and bottom of the selection to harsh discontinuities
 
-It is obviously possible to "sample" first by selecting a limited-width area with a clean white or gray background, and subsequently widen the selection or selecting a different band before "fixing".
+It is obviously possible to "sample" first by selecting a limited-width area with a clean white or gray background, and subsequently widen the selection or selecting a another band at a different height in the image before "fixing".
 
 ## Issues
 
@@ -33,5 +33,6 @@ Known issues (that can, should, and will someday be fixed):
 - the plug-in is not very fast because it's using single-pixel operations rather tiles.
 - the correction assumes that the band is perfectly horizontal and has a uniform color pattern across it's entire width.
 - the plugin only support RGB color images, no alpha channel yet.
+- the collected data by the "Capture" operation is saved in a file in "/tmp", which works on OSX and Linux, but probably not on Windows.
 
-
+We warmly welcome all bug fixes, feature additions, comments, etc.
